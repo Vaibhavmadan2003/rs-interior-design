@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UT-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RS Interior Company - Interior Designer in Darbhanga</title>
     <style>
@@ -12,7 +12,7 @@
         }
 
         body {
-            ont-amily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-seri;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
         }
@@ -22,7 +22,7 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 0.8rem 0;
-            position: ixed;
+            position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -33,24 +33,24 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-            display: lex;
-            justiy-content: space-between;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            display: lex;
+            display: flex;
             align-items: center;
             gap: 0.8rem;
-            ont-size: 1.5rem;
-            ont-weight: bold;
+            font-size: 1.5rem;
+            font-weight: bold;
             text-decoration: none;
             color: white;
-            transition: transorm 0.3s;
+            transition: transform 0.3s;
         }
 
         .logo:hover {
-            transorm: scale(1.05);
+            transform: scale(1.05);
         }
 
         .logo-icon {
@@ -58,15 +58,15 @@
             height: 40px;
             background: rgba(255,255,255,0.2);
             border-radius: 50%;
-            display: lex;
+            display: flex;
             align-items: center;
-            justiy-content: center;
-            ont-size: 1.5rem;
+            justify-content: center;
+            font-size: 1.5rem;
             border: 2px solid white;
         }
 
         .nav-menu {
-            display: lex;
+            display: flex;
             gap: 2rem;
             align-items: center;
             list-style: none;
@@ -75,8 +75,8 @@
         .nav-menu a {
             color: white;
             text-decoration: none;
-            ont-size: 0.95rem;
-            ont-weight: 500;
+            font-size: 0.95rem;
+            font-weight: 500;
             transition: all 0.3s;
             padding: 0.5rem 1rem;
             border-radius: 4px;
@@ -84,43 +84,43 @@
 
         .nav-menu a:hover {
             background: rgba(255,255,255,0.2);
-            transorm: translateY(-2px);
+            transform: translateY(-2px);
         }
 
         .contact-section {
-            display: lex;
+            display: flex;
             gap: 1.5rem;
             align-items: center;
-            border-let: 2px solid rgba(255,255,255,0.3);
-            padding-let: 1.5rem;
+            border-left: 2px solid rgba(255,255,255,0.3);
+            padding-left: 1.5rem;
         }
 
         .contact-item {
-            display: lex;
-            lex-direction: column;
-            ont-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.85rem;
         }
 
         .contact-item strong {
-            ont-size: 1rem;
-            color: #6b6b;
+            font-size: 1rem;
+            color: #ff6b6b;
         }
 
         .cta-header-btn {
-            background: #6b6b;
+            background: #ff6b6b;
             color: white;
             padding: 0.7rem 1.5rem;
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            ont-weight: 600;
+            font-weight: 600;
             transition: all 0.3s;
             box-shadow: 0 4px 8px rgba(255,107,107,0.3);
         }
 
         .cta-header-btn:hover {
-            background: #5252;
-            transorm: translateY(-2px);
+            background: #ff5252;
+            transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(255,107,107,0.4);
         }
 
@@ -134,52 +134,52 @@
         }
 
         .hero h1 {
-            ont-size: 2.5rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
 
         .hero p {
-            ont-size: 1.2rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.95;
         }
 
         .cta-button {
-            background: #6b6b;
+            background: #ff6b6b;
             color: white;
             padding: 0.8rem 2rem;
             border: none;
             border-radius: 5px;
-            ont-size: 1rem;
+            font-size: 1rem;
             cursor: pointer;
             transition: background 0.3s;
         }
 
         .cta-button:hover {
-            background: #5252;
+            background: #ff5252;
         }
 
         /* Stats Section */
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(200px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
             padding: 3rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
-            background: #89a;
+            background: #f8f9fa;
         }
 
         .stat-item h3 {
-            ont-size: 2.5rem;
+            font-size: 2.5rem;
             color: #667eea;
             margin-bottom: 0.5rem;
         }
 
         .stat-item p {
             color: #666;
-            ont-size: 0.95rem;
+            font-size: 0.95rem;
         }
 
         /* About Section */
@@ -190,14 +190,14 @@
         }
 
         .about h2 {
-            ont-size: 2rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
             color: #667eea;
         }
 
         .about-content {
             display: grid;
-            grid-template-columns: 1r 1r;
+            grid-template-columns: 1fr 1fr;
             gap: 3rem;
         }
 
@@ -209,15 +209,15 @@
 
         .mission-vision {
             display: grid;
-            grid-template-columns: 1r 1r;
+            grid-template-columns: 1fr 1fr;
             gap: 2rem;
         }
 
         .mission, .vision {
-            background: #89a;
+            background: #f8f9fa;
             padding: 2rem;
             border-radius: 8px;
-            border-let: 4px solid #667eea;
+            border-left: 4px solid #667eea;
         }
 
         .mission h3, .vision h3 {
@@ -227,7 +227,7 @@
 
         /* Why Choose Us */
         .why-choose {
-            background: #89a;
+            background: #f8f9fa;
             padding: 3rem 2rem;
         }
 
@@ -237,38 +237,38 @@
         }
 
         .why-choose h2 {
-            ont-size: 2rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             color: #667eea;
             text-align: center;
         }
 
-        .eatures-grid {
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(250px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
 
-        .eature-card {
+        .feature-card {
             background: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transorm 0.3s;
+            transition: transform 0.3s;
         }
 
-        .eature-card:hover {
-            transorm: translateY(-5px);
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
 
-        .eature-card h3 {
+        .feature-card h3 {
             color: #667eea;
             margin-bottom: 1rem;
         }
 
-        .eature-card p {
+        .feature-card p {
             color: #666;
-            ont-size: 0.9rem;
+            font-size: 0.9rem;
         }
 
         /* Services Section */
@@ -279,7 +279,7 @@
         }
 
         .services h2 {
-            ont-size: 2rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             color: #667eea;
             text-align: center;
@@ -287,7 +287,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(280px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
@@ -302,11 +302,11 @@
 
         .service-card:hover {
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transorm: translateY(-5px);
+            transform: translateY(-5px);
         }
 
         .service-icon {
-            ont-size: 3rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
@@ -328,14 +328,14 @@
         }
 
         .contact h2 {
-            ont-size: 2rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             text-align: center;
         }
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(250px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
@@ -348,151 +348,151 @@
             margin-bottom: 0.5rem;
         }
 
-        .contact-orm {
+        .contact-form {
             max-width: 600px;
             margin: 2rem auto;
         }
 
-        .orm-group {
+        .form-group {
             margin-bottom: 1.5rem;
         }
 
-        .orm-group input,
-        .orm-group textarea {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 0.8rem;
             border: none;
             border-radius: 5px;
-            ont-amily: inherit;
+            font-family: inherit;
         }
 
-        .orm-group textarea {
+        .form-group textarea {
             resize: vertical;
             min-height: 120px;
         }
 
         .submit-btn {
-            background: #6b6b;
+            background: #ff6b6b;
             color: white;
             padding: 0.8rem 2rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
-            ont-size: 1rem;
+            font-size: 1rem;
             transition: background 0.3s;
         }
 
         .submit-btn:hover {
-            background: #5252;
+            background: #ff5252;
         }
 
-        /* ooter */
-        ooter {
+        /* Footer */
+        footer {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
             padding: 3rem 2rem 1rem;
         }
 
-        .ooter-container {
+        .footer-container {
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .ooter-content {
+        .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(250px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
 
-        .ooter-section h3 {
-            ont-size: 1.2rem;
+        .footer-section h3 {
+            font-size: 1.2rem;
             margin-bottom: 1rem;
             color: #667eea;
             border-bottom: 2px solid #667eea;
             padding-bottom: 0.5rem;
         }
 
-        .ooter-section ul {
+        .footer-section ul {
             list-style: none;
         }
 
-        .ooter-section ul li {
+        .footer-section ul li {
             margin-bottom: 0.7rem;
-            ont-size: 0.95rem;
+            font-size: 0.95rem;
         }
 
-        .ooter-section a {
+        .footer-section a {
             color: #ccc;
             text-decoration: none;
             transition: color 0.3s;
         }
 
-        .ooter-section a:hover {
+        .footer-section a:hover {
             color: #667eea;
         }
 
-        .ooter-contact {
+        .footer-contact {
             margin-top: 1rem;
         }
 
-        .ooter-contact p {
+        .footer-contact p {
             margin-bottom: 0.5rem;
-            ont-size: 0.95rem;
+            font-size: 0.95rem;
         }
 
         .social-links {
-            display: lex;
+            display: flex;
             gap: 1rem;
             margin-top: 1rem;
         }
 
         .social-links a {
-            display: inline-lex;
+            display: inline-flex;
             align-items: center;
-            justiy-content: center;
+            justify-content: center;
             width: 40px;
             height: 40px;
             background: #667eea;
             border-radius: 50%;
             color: white;
             text-decoration: none;
-            ont-size: 1.2rem;
+            font-size: 1.2rem;
             transition: all 0.3s;
         }
 
         .social-links a:hover {
-            background: #6b6b;
-            transorm: translateY(-3px);
+            background: #ff6b6b;
+            transform: translateY(-3px);
         }
 
-        .ooter-divider {
+        .footer-divider {
             height: 1px;
             background: #444;
             margin: 2rem 0;
         }
 
-        .ooter-bottom {
+        .footer-bottom {
             display: grid;
-            grid-template-columns: repeat(auto-it, minmax(200px, 1r));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
             padding: 1.5rem 0;
             border-top: 1px solid #444;
         }
 
-        .ooter-bottom-item {
+        .footer-bottom-item {
             text-align: center;
-            ont-size: 0.85rem;
+            font-size: 0.85rem;
             color: #999;
         }
 
-        .ooter-bottom-item a {
+        .footer-bottom-item a {
             color: #667eea;
             text-decoration: none;
         }
 
-        .ooter-bottom-item a:hover {
+        .footer-bottom-item a:hover {
             text-decoration: underline;
         }
 
@@ -501,13 +501,13 @@
             padding: 1rem 0;
             border-top: 1px solid #444;
             color: #999;
-            ont-size: 0.85rem;
+            font-size: 0.85rem;
         }
 
-        /* Hamburger Menu or Mobile */
+        /* Hamburger Menu for Mobile */
         .hamburger {
             display: none;
-            lex-direction: column;
+            flex-direction: column;
             cursor: pointer;
             gap: 5px;
         }
@@ -528,38 +528,38 @@
 
             .contact-section {
                 gap: 1rem;
-                padding-let: 1rem;
+                padding-left: 1rem;
             }
 
             .contact-item {
-                ont-size: 0.8rem;
+                font-size: 0.8rem;
             }
         }
 
         @media (max-width: 768px) {
             .header-container {
-                lex-wrap: wrap;
+                flex-wrap: wrap;
                 gap: 1rem;
             }
 
             .hamburger {
-                display: lex;
+                display: flex;
             }
 
             .nav-menu {
                 display: none;
                 position: absolute;
                 top: 70px;
-                let: 0;
+                left: 0;
                 width: 100%;
                 background: #667eea;
-                lex-direction: column;
+                flex-direction: column;
                 gap: 0;
                 padding: 1rem 0;
             }
 
             .nav-menu.active {
-                display: lex;
+                display: flex;
             }
 
             .nav-menu a {
@@ -568,35 +568,35 @@
             }
 
             .contact-section {
-                lex-direction: row;
+                flex-direction: row;
                 gap: 1rem;
-                border-let: none;
-                padding-let: 0;
+                border-left: none;
+                padding-left: 0;
                 border-top: 2px solid rgba(255,255,255,0.3);
                 padding-top: 1rem;
                 width: 100%;
-                justiy-content: space-between;
+                justify-content: space-between;
             }
 
             .hero h1 {
-                ont-size: 1.8rem;
+                font-size: 1.8rem;
             }
 
             .about-content,
             .mission-vision {
-                grid-template-columns: 1r;
+                grid-template-columns: 1fr;
             }
 
             .contact-grid {
-                grid-template-columns: 1r;
+                grid-template-columns: 1fr;
             }
 
-            .ooter-content {
-                grid-template-columns: 1r;
+            .footer-content {
+                grid-template-columns: 1fr;
             }
 
-            .ooter-bottom {
-                grid-template-columns: 1r;
+            .footer-bottom {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -605,24 +605,24 @@
     <!-- Header - IMPROVED -->
     <header>
         <div class="header-container">
-            <a hre="#" class="logo">
+            <a href="#" class="logo">
                 <div class="logo-icon">??</div>
                 <span>RS Interior Company</span>
             </a>
 
             <nav class="nav-menu">
-                <a hre="#about">About</a>
-                <a hre="#services">Services</a>
-                <a hre="#contact">Contact</a>
-                <a hre="#">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Gallery</a>
             </nav>
 
             <div class="contact-section">
                 <div class="contact-item">
                     <small>Call Now</small>
-                    <strong><a hre="tel:+919431848510" style="color: #6b6b; text-decoration: none;">+91 94318 48510</a></strong>
+                    <strong><a href="tel:+919431848510" style="color: #ff6b6b; text-decoration: none;">+91 94318 48510</a></strong>
                 </div>
-                <button class="cta-header-btn" onclick="document.querySelector('.contact-orm').scrollIntoView({behavior: 'smooth'})">Get Quote</button>
+                <button class="cta-header-btn" onclick="document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'})">Get Quote</button>
             </div>
 
             <div class="hamburger" id="hamburger">
@@ -636,9 +636,9 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
         <h1>RS Interior Company</h1>
-        <p>Proessional Interior Design & Decoration Services</p>
-        <p style="ont-size: 1rem; opacity: 0.9;">Transorm Your Space Into Your Dream Design</p>
-        <button class="cta-button">Get ree Consultation</button>
+        <p>Professional Interior Design & Decoration Services</p>
+        <p style="font-size: 1rem; opacity: 0.9;">Transform Your Space Into Your Dream Design</p>
+        <button class="cta-button">Get Free Consultation</button>
     </section>
 
     <!-- Stats -->
@@ -649,7 +649,7 @@
         </div>
         <div class="stat-item">
             <h3>98%</h3>
-            <p>Client Satisaction</p>
+            <p>Client Satisfaction</p>
         </div>
         <div class="stat-item">
             <h3>8+</h3>
@@ -666,17 +666,17 @@
         <h2>About RS Interior Company</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>RS Interior Company has been providing proessional interior design and decoration services in Darbhanga and surrounding areas or over 8 years. Our experienced team o designers is dedicated to creating beautiul, unctional, and personalized spaces that relect your unique style and preerences.</p>
-                <p>We specialize in residential and commercial interior design, ensuring quality workmanship, innovative designs, and excellent customer satisaction with every project we undertake.</p>
+                <p>RS Interior Company has been providing professional interior design and decoration services in Darbhanga and surrounding areas for over 8 years. Our experienced team of designers is dedicated to creating beautiful, functional, and personalized spaces that reflect your unique style and preferences.</p>
+                <p>We specialize in residential and commercial interior design, ensuring quality workmanship, innovative designs, and excellent customer satisfaction with every project we undertake.</p>
             </div>
             <div class="mission-vision">
                 <div class="mission">
                     <h3>?? Our Mission</h3>
-                    <p>To provide aordable, proessional interior design services with creative solutions and exceptional cratsmanship or all our clients.</p>
+                    <p>To provide affordable, professional interior design services with creative solutions and exceptional craftsmanship for all our clients.</p>
                 </div>
                 <div class="vision">
                     <h3>?? Our Vision</h3>
-                    <p>To be the most trusted interior design company in Bihar, known or innovation, quality, and customer-centric approach.</p>
+                    <p>To be the most trusted interior design company in Bihar, known for innovation, quality, and customer-centric approach.</p>
                 </div>
             </div>
         </div>
@@ -686,30 +686,30 @@
     <section class="why-choose">
         <div class="why-choose-container">
             <h2>Why Choose RS Interior Company?</h2>
-            <div class="eatures-grid">
-                <div class="eature-card">
+            <div class="features-grid">
+                <div class="feature-card">
                     <h3>? Expert Designers</h3>
-                    <p>8+ years o proessional interior design experience with certiied designers</p>
+                    <p>8+ years of professional interior design experience with certified designers</p>
                 </div>
-                <div class="eature-card">
+                <div class="feature-card">
                     <h3>? Creative Solutions</h3>
-                    <p>Custom-tailored designs that perectly match your vision and requirements</p>
+                    <p>Custom-tailored designs that perfectly match your vision and requirements</p>
                 </div>
-                <div class="eature-card">
+                <div class="feature-card">
                     <h3>? Quality Materials</h3>
-                    <p>Only premium quality materials and skilled cratsmen or best results</p>
+                    <p>Only premium quality materials and skilled craftsmen for best results</p>
                 </div>
-                <div class="eature-card">
-                    <h3>? Aordable Pricing</h3>
+                <div class="feature-card">
+                    <h3>? Affordable Pricing</h3>
                     <p>Competitive rates with transparent pricing and no hidden charges</p>
                 </div>
-                <div class="eature-card">
+                <div class="feature-card">
                     <h3>? On-Time Delivery</h3>
-                    <p>We ensure timely completion o all projects within agreed timelines</p>
+                    <p>We ensure timely completion of all projects within agreed timelines</p>
                 </div>
-                <div class="eature-card">
-                    <h3>? ull Support</h3>
-                    <p>Complete support rom design consultation to inal execution and beyond</p>
+                <div class="feature-card">
+                    <h3>? Full Support</h3>
+                    <p>Complete support from design consultation to final execution and beyond</p>
                 </div>
             </div>
         </div>
@@ -722,32 +722,32 @@
             <div class="service-card">
                 <div class="service-icon">??</div>
                 <h3>Residential Design</h3>
-                <p>Beautiul and unctional interior designs or homes, apartments, and villas</p>
+                <p>Beautiful and functional interior designs for homes, apartments, and villas</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">??</div>
                 <h3>Commercial Design</h3>
-                <p>Proessional oice and commercial space interior design solutions</p>
+                <p>Professional office and commercial space interior design solutions</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">???</div>
-                <h3>urniture Design</h3>
-                <p>Custom urniture design and installation tailored to your space</p>
+                <h3>Furniture Design</h3>
+                <p>Custom furniture design and installation tailored to your space</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">??</div>
                 <h3>Space Planning</h3>
-                <p>Strategic space planning to maximize unctionality and aesthetics</p>
+                <p>Strategic space planning to maximize functionality and aesthetics</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">??</div>
                 <h3>Lighting Design</h3>
-                <p>Proessional lighting solutions that enhance ambiance and unctionality</p>
+                <p>Professional lighting solutions that enhance ambiance and functionality</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">??</div>
                 <h3>Renovation Services</h3>
-                <p>Complete renovation and modernization o existing spaces</p>
+                <p>Complete renovation and modernization of existing spaces</p>
             </div>
         </div>
     </section>
@@ -763,7 +763,7 @@
                 </div>
                 <div class="contact-item">
                     <h3>?? Location</h3>
-                    <p>Village Satghara, Post Oice Mapara<br>Darbhanga, Bihar 846009</p>
+                    <p>Village Satghara, Post Office Mapara<br>Darbhanga, Bihar 846009</p>
                 </div>
                 <div class="contact-item">
                     <h3>? Hours</h3>
@@ -771,98 +771,98 @@
                 </div>
             </div>
 
-            <div class="contact-orm">
-                <orm onsubmit="handleSubmit(event)">
-                    <div class="orm-group">
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
                     </div>
-                    <div class="orm-group">
+                    <div class="form-group">
                         <input type="email" placeholder="Your Email" required>
                     </div>
-                    <div class="orm-group">
+                    <div class="form-group">
                         <input type="tel" placeholder="Your Phone" required>
                     </div>
-                    <div class="orm-group">
+                    <div class="form-group">
                         <textarea placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
-                </orm>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ooter -->
-    <ooter>
-        <div class="ooter-container">
-            <div class="ooter-content">
-                <div class="ooter-section">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h3>About Us</h3>
-                    <p style="color: #ccc; ont-size: 0.95rem; line-height: 1.6;">RS Interior Company is your trusted partner or proessional interior design and decoration services in Bihar. We create beautiul spaces that relect your style.</p>
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6;">RS Interior Company is your trusted partner for professional interior design and decoration services in Bihar. We create beautiful spaces that reflect your style.</p>
                     <div class="social-links">
-                        <a hre="#" title="acebook"></a>
-                        <a hre="#" title="Instagram">??</a>
-                        <a hre="#" title="WhatsApp">??</a>
-                        <a hre="#" title="Call">?</a>
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">??</a>
+                        <a href="#" title="WhatsApp">??</a>
+                        <a href="#" title="Call">?</a>
                     </div>
                 </div>
 
-                <div class="ooter-section">
+                <div class="footer-section">
                     <h3>Our Services</h3>
                     <ul>
-                        <li><a hre="#services">Residential Design</a></li>
-                        <li><a hre="#services">Commercial Design</a></li>
-                        <li><a hre="#services">urniture Design</a></li>
-                        <li><a hre="#services">Space Planning</a></li>
-                        <li><a hre="#services">Lighting Design</a></li>
-                        <li><a hre="#services">Renovation Services</a></li>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Design</a></li>
+                        <li><a href="#services">Furniture Design</a></li>
+                        <li><a href="#services">Space Planning</a></li>
+                        <li><a href="#services">Lighting Design</a></li>
+                        <li><a href="#services">Renovation Services</a></li>
                     </ul>
                 </div>
 
-                <div class="ooter-section">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a hre="#about">About Us</a></li>
-                        <li><a hre="#services">Services</a></li>
-                        <li><a hre="#contact">Contact</a></li>
-                        <li><a hre="#">Privacy Policy</a></li>
-                        <li><a hre="#">Terms & Conditions</a></li>
-                        <li><a hre="#">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Gallery</a></li>
                     </ul>
                 </div>
 
-                <div class="ooter-section">
+                <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <div class="ooter-contact">
-                        <p><strong>?? Phone:</strong><br><a hre="tel:+919431848510">+91 94318 48510</a></p>
-                        <p><strong>?? Email:</strong><br><a hre="mailto:ino@rsinterior.com">ino@rsinterior.com</a></p>
-                        <p><strong>?? Location:</strong><br>Village Satghara, Post Oice Mapara<br>Darbhanga, Bihar 846009</p>
+                    <div class="footer-contact">
+                        <p><strong>?? Phone:</strong><br><a href="tel:+919431848510">+91 94318 48510</a></p>
+                        <p><strong>?? Email:</strong><br><a href="mailto:info@rsinterior.com">info@rsinterior.com</a></p>
+                        <p><strong>?? Location:</strong><br>Village Satghara, Post Office Mapara<br>Darbhanga, Bihar 846009</p>
                         <p><strong>? Hours:</strong><br>09:00 AM - 07:00 PM<br>Daily</p>
                     </div>
                 </div>
             </div>
 
-            <div class="ooter-divider"></div>
+            <div class="footer-divider"></div>
 
-            <div class="ooter-bottom">
-                <div class="ooter-bottom-item">
+            <div class="footer-bottom">
+                <div class="footer-bottom-item">
                     <strong>?? Quality Assured</strong><br>
-                    Premium materials & expert cratsmanship
+                    Premium materials & expert craftsmanship
                 </div>
-                <div class="ooter-bottom-item">
+                <div class="footer-bottom-item">
                     <strong>? 500+ Projects</strong><br>
-                    Successully completed
+                    Successfully completed
                 </div>
-                <div class="ooter-bottom-item">
-                    <strong>? 98% Satisaction</strong><br>
+                <div class="footer-bottom-item">
+                    <strong>? 98% Satisfaction</strong><br>
                     Happy customers
                 </div>
             </div>
 
             <div class="copyright">
-                <p>&copy; 2024 RS Interior Company. All Rights Reserved. | Designed with ?? or Your Dream Space</p>
+                <p>&copy; 2024 RS Interior Company. All Rights Reserved. | Designed with ?? for Your Dream Space</p>
             </div>
         </div>
-    </ooter>
+    </footer>
 
     <script>
         // Mobile Menu Toggle
@@ -874,19 +874,18 @@
         });
 
         // Close menu when link is clicked
-        document.querySelectorAll('.nav-menu a').orEach(link => {
+        document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
             });
         });
 
-        unction handleSubmit(event) {
-            event.preventDeault();
-            alert('Thank you or your message! We will contact you soon.');
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
             event.target.reset();
         }
     </script>
 </body>
 </html>
-
 
