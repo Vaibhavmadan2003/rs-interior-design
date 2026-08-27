@@ -1,0 +1,890 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Interior Company - Interior Designer in Darbhanga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header & Navigation - IMPROVED */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border: 2px solid white;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .contact-section {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            border-left: 2px solid rgba(255,255,255,0.3);
+            padding-left: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.85rem;
+        }
+
+        .contact-item strong {
+            font-size: 1rem;
+            color: #ff6b6b;
+        }
+
+        .cta-header-btn {
+            background: #ff6b6b;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(255,107,107,0.3);
+        }
+
+        .cta-header-btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255,107,107,0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ff5252;
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .mission, .vision {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .mission h3, .vision h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            background: #f8f9fa;
+            padding: 3rem 2rem;
+        }
+
+        .why-choose-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-choose h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #ff6b6b;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #ff5252;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.7rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-contact {
+            margin-top: 1rem;
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #667eea;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #ff6b6b;
+            transform: translateY(-3px);
+        }
+
+        .footer-divider {
+            height: 1px;
+            background: #444;
+            margin: 2rem 0;
+        }
+
+        .footer-bottom {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid #444;
+        }
+
+        .footer-bottom-item {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .footer-bottom-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer-bottom-item a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        /* Hamburger Menu for Mobile */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                gap: 1rem;
+            }
+
+            .contact-section {
+                gap: 1rem;
+                padding-left: 1rem;
+            }
+
+            .contact-item {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #667eea;
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem 0;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu a {
+                padding: 1rem 2rem;
+                border-radius: 0;
+            }
+
+            .contact-section {
+                flex-direction: row;
+                gap: 1rem;
+                border-left: none;
+                padding-left: 0;
+                border-top: 2px solid rgba(255,255,255,0.3);
+                padding-top: 1rem;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-content,
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - IMPROVED -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">🎨</div>
+                <span>RS Interior</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Gallery</a>
+            </nav>
+
+            <div class="contact-section">
+                <div class="contact-item">
+                    <small>Call Now</small>
+                    <strong><a href="tel:+919431848510" style="color: #ff6b6b; text-decoration: none;">+91 94318 48510</a></strong>
+                </div>
+                <button class="cta-header-btn" onclick="document.querySelector('.contact-form').scrollIntoView({behavior: 'smooth'})">Get Quote</button>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <h1>RS Interior Company</h1>
+        <p>Professional Interior Design & Decoration Services</p>
+        <p style="font-size: 1rem; opacity: 0.9;">Transform Your Space Into Your Dream Design</p>
+        <button class="cta-button">Get Free Consultation</button>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3>500+</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <h3>98%</h3>
+            <p>Client Satisfaction</p>
+        </div>
+        <div class="stat-item">
+            <h3>8+</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Customer Support</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About RS Interior Company</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>RS Interior Company has been providing professional interior design and decoration services in Darbhanga and surrounding areas for over 8 years. Our experienced team of designers is dedicated to creating beautiful, functional, and personalized spaces that reflect your unique style and preferences.</p>
+                <p>We specialize in residential and commercial interior design, ensuring quality workmanship, innovative designs, and excellent customer satisfaction with every project we undertake.</p>
+            </div>
+            <div class="mission-vision">
+                <div class="mission">
+                    <h3>💡 Our Mission</h3>
+                    <p>To provide affordable, professional interior design services with creative solutions and exceptional craftsmanship for all our clients.</p>
+                </div>
+                <div class="vision">
+                    <h3>🎯 Our Vision</h3>
+                    <p>To be the most trusted interior design company in Bihar, known for innovation, quality, and customer-centric approach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="why-choose-container">
+            <h2>Why Choose RS Interior Company?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>✓ Expert Designers</h3>
+                    <p>8+ years of professional interior design experience with certified designers</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✓ Creative Solutions</h3>
+                    <p>Custom-tailored designs that perfectly match your vision and requirements</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✓ Quality Materials</h3>
+                    <p>Only premium quality materials and skilled craftsmen for best results</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✓ Affordable Pricing</h3>
+                    <p>Competitive rates with transparent pricing and no hidden charges</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✓ On-Time Delivery</h3>
+                    <p>We ensure timely completion of all projects within agreed timelines</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✓ Full Support</h3>
+                    <p>Complete support from design consultation to final execution and beyond</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Residential Design</h3>
+                <p>Beautiful and functional interior designs for homes, apartments, and villas</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Commercial Design</h3>
+                <p>Professional office and commercial space interior design solutions</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛋️</div>
+                <h3>Furniture Design</h3>
+                <p>Custom furniture design and installation tailored to your space</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Space Planning</h3>
+                <p>Strategic space planning to maximize functionality and aesthetics</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Lighting Design</h3>
+                <p>Professional lighting solutions that enhance ambiance and functionality</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔨</div>
+                <h3>Renovation Services</h3>
+                <p>Complete renovation and modernization of existing spaces</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>+91 94318 48510</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Village Satghara, Post Office Mapara<br>Darbhanga, Bihar 846009</p>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Hours</h3>
+                    <p>09:00 - 19:00<br>Daily</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6;">RS Interior Company is your trusted partner for professional interior design and decoration services in Bihar. We create beautiful spaces that reflect your style.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="WhatsApp">💬</a>
+                        <a href="#" title="Call">☎</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Design</a></li>
+                        <li><a href="#services">Furniture Design</a></li>
+                        <li><a href="#services">Space Planning</a></li>
+                        <li><a href="#services">Lighting Design</a></li>
+                        <li><a href="#services">Renovation Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p><strong>📞 Phone:</strong><br><a href="tel:+919431848510">+91 94318 48510</a></p>
+                        <p><strong>📧 Email:</strong><br><a href="mailto:info@rsinterior.com">info@rsinterior.com</a></p>
+                        <p><strong>📍 Location:</strong><br>Village Satghara, Post Office Mapara<br>Darbhanga, Bihar 846009</p>
+                        <p><strong>⏰ Hours:</strong><br>09:00 AM - 07:00 PM<br>Daily</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-item">
+                    <strong>🏆 Quality Assured</strong><br>
+                    Premium materials & expert craftsmanship
+                </div>
+                <div class="footer-bottom-item">
+                    <strong>✓ 500+ Projects</strong><br>
+                    Successfully completed
+                </div>
+                <div class="footer-bottom-item">
+                    <strong>⭐ 98% Satisfaction</strong><br>
+                    Happy customers
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 RS Interior Company. All Rights Reserved. | Designed with ❤️ for Your Dream Space</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
